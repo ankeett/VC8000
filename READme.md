@@ -49,7 +49,8 @@ BRANCH POSITIVE 16       go to ADDR if c(Reg) > 0
 
 HALT                    17           terminate execution.  The register value and address are ignored.
 
-Example of a test program: (Yes, this program does not do much.) 
+Example of a test program:
+```
 ;this is a test
         org    100
 hi     read    x;this comment is immediately after statement
@@ -64,7 +65,7 @@ y      ds      99
 b      dc      555
 a      dc      100
         end
-
+```
 ![output 1](https://user-images.githubusercontent.com/94247776/169140270-c3494ba8-21a7-4a3d-9505-ce44abc7bf8e.png)
 
 
