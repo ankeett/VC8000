@@ -27,27 +27,27 @@ NAME           OP. CODE     MEANING
 
 - STORE                06            ADDR <-- c(Reg)
 
-ADD REG            07            REG1 <--c(REG1) + c(REG2)   (Note: this is the second instruction format where two registers are specified.)
+- ADD REG            07            REG1 <--c(REG1) + c(REG2)   (Note: this is the second instruction format where two registers are specified.)
 
-SUB REG            08            REG1 <--c(REG1) - c(REG2)  
+- SUB REG            08            REG1 <--c(REG1) - c(REG2)  
 
-MULT REG          09            REG1 <--c(REG1) * c(REG2)  
+- MULT REG          09            REG1 <--c(REG1) * c(REG2)  
 
-DIV REG              10            REG1 <--c(REG1) / c(REG2)  
+- DIV REG              10            REG1 <--c(REG1) / c(REG2)  
 
-READ                   11            A line is read in and the number found there is recorded in the specified memory address.  The register value is ignored.
+- READ                   11            A line is read in and the number found there is recorded in the specified memory address.  The register value is ignored.
 
-WRITE                 12            c(ADDR) is displayed  The register value is ignored.
+- WRITE                 12            c(ADDR) is displayed  The register value is ignored.
 
-BRANCH              13           go to ADDR for next instruction.  The register value is ignored.
+- BRANCH              13           go to ADDR for next instruction.  The register value is ignored.
 
-BRANCH MINUS  14          go to ADDR if c(Reg) < 0
+- BRANCH MINUS  14          go to ADDR if c(Reg) < 0
 
-BRANCH ZERO    15          go to ADDR if c(Reg) = 0
+- BRANCH ZERO    15          go to ADDR if c(Reg) = 0
 
-BRANCH POSITIVE 16       go to ADDR if c(Reg) > 0
+- BRANCH POSITIVE 16       go to ADDR if c(Reg) > 0
 
-HALT                    17           terminate execution.  The register value and address are ignored.
+- HALT                    17           terminate execution.  The register value and address are ignored.
 
 Example of a test program:
 ```
