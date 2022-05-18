@@ -15,17 +15,17 @@ or
 
 NAME           OP. CODE     MEANING
 
-ADD                     01           Reg <-- c(Reg) + c(ADDR)   (The contents of the register specified in the instruction and of the memory location specified by the address portion of the instruction are added together. The result is placed in the register.):
+- ADD                     01           Reg <-- c(Reg) + c(ADDR)   (The contents of the register specified in the instruction and of the memory location specified by the address portion of the instruction are added together. The result is placed in the register.):
 
-SUBTRACT         02            Reg <-- c(Reg) - c(ADDR)
+- SUBTRACT         02            Reg <-- c(Reg) - c(ADDR)
 
-MULTIPLY           03            Reg <-- c(Reg) * c(ADDR)
+- MULTIPLY           03            Reg <-- c(Reg) * c(ADDR)
 
-DIVIDE                 04            Reg <-- c(Reg) / c(ADDR)
+- DIVIDE                 04            Reg <-- c(Reg) / c(ADDR)
 
-LOAD                   05            Reg <-- c(ADDR)
+- LOAD                   05            Reg <-- c(ADDR)
 
-STORE                06            ADDR <-- c(Reg)
+- STORE                06            ADDR <-- c(Reg)
 
 ADD REG            07            REG1 <--c(REG1) + c(REG2)   (Note: this is the second instruction format where two registers are specified.)
 
