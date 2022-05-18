@@ -71,7 +71,7 @@ a      dc      100
 Another Example: 
 The following is an assembler language program which will read in a number "n" and then compute and print the value of n!.
  
-
+```
                 org 100
                 read 0, n
 more        load  1, n; This is a comment
@@ -90,7 +90,7 @@ fac           dc 1
 one          dc 1
 test          dc 1234 ; show your program can handle big constants.
                 end
-                
+```                
 ![fac](https://user-images.githubusercontent.com/94247776/169140545-1538dce6-ea03-48f0-923a-621482f56799.png)
 
 
